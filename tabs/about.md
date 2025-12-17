@@ -8,7 +8,7 @@ title: About
 # MIT License
 ---
 
-<img style="float: right;" src="https://github.com/trstringer.png?size=200">
+<img style="float: right;" src="https://github.com/tofchaliss.png?size=200" alt="">
 
 I am a **Software Engineer** focusing on infrastructure, platforms, Linux, open source software, DevOps, distributed computing (Kubernetes), containerization, and the cloud.
 
@@ -18,4 +18,4 @@ My non-computer passions are surfing, snowboarding, mountain biking, and piano. 
 
 ### Contact me
 
-[thomas@trstringer.com](mailto:thomas@trstringer.com)
+[thomas@trstringer.com](mailto:tofchaliss@gmail.com)
