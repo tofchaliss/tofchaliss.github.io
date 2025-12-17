@@ -9,7 +9,7 @@ One of the common themes in modern Linux is the adoption of systemd. Like it or 
 
 The main component of logging in systemd is the Journal, controlled by journald. Linux users are undoubtedly familiar with invoking `journalctl` to view Journal logs. As Python developers that target Linux environments, it isn’t unusual to use systemd to manage our logged events.
 
-I like this approach almost as much as I like logging to stdout, as it is consistent, expected (on Linux), and there is plenty of tooling around to support scraping the logs from systemd to push to central logging, aggregation, etc. (take a look at [fluentd](https://www.fluentd.org/) and [Fluent Bit](http://fluentbit.io/)!).
+I like this approach almost as much as I like logging to stdout, as it is consistent, expected (on Linux), and there is plenty of tooling around to support scraping the logs from systemd to push to central logging, aggregation, etc. (take a look at [fluentd](https://www.fluentd.org/) and [Fluent Bit](https://fluentbit.io/)!).
 
 ## Installing system dependencies
 
