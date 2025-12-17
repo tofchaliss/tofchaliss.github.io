@@ -1,24 +1,18 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 7.4", ">= 7.4.1"
 gem "jekyll", ">=3.8.6"
 
-gem "html-proofer", "~> 5.0", group: :test
 gem "webrick"
-gem "jekyll-analytics"
 
-platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
-  gem "tzinfo-data"
-end
+gem "jekyll-analytics", "~> 0.1", git: 'https://github.com/hendrikschneider/jekyll-analytics', ref: '40e09570dea80e3a9ecb0ad796aad1c434ff067c'
 
 # Official Plugins
 group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-redirect-from"
-  gem "jekyll-seo-tag"
+  gem "jekyll-seo-tag", "~> 2.6.1"
 end
 
-gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
+group :test do
+  gem "html-proofer"
+end
