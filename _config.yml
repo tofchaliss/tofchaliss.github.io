@@ -155,6 +155,8 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+permalink: /:title/
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
@@ -186,7 +188,7 @@ defaults:
       location: Post
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
-      permalink: /posts/:title/
+      #permalink: /posts/:title/
       breadcrumb:
         -
           label: Posts
@@ -220,12 +222,10 @@ defaults:
           label: Categories
           url: /tabs/categories/
   - scope:
-      path: ""
-      type: tabs # see `site.collections`
+      path: tabs
     values:
       layout: page
       dynamic_title: true
-      permalink: /:title/
       breadcrumb:
         -
           label: Home
@@ -271,3 +271,19 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+sitemap_exclude:  # Sitemap will exclude the following items.
+  fuzzy:
+    - /assets/
+  accurate:
+    - /norobots/
+    - /tabs/
+    - /categories/
+    - /tags/
+    - /posts/
+    - 404.html
+    - feed.xml
+    - sitemap.xml
+    - robots.txt
+    - redirects.json
+
