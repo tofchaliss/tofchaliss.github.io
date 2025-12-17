@@ -18,4 +18,4 @@ My non-computer passions are surfing, snowboarding, mountain biking, and piano. 
 
 ### Contact me
 
-[thomas@trstringer.com](mailto:tofchaliss@gmail.com)
+[tofchaliss@gmail.com](mailto:tofchaliss@gmail.com)
