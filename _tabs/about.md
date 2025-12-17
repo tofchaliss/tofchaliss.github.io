@@ -1,8 +1,21 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
+title: About
+
+# The About page
+# v2.0
+# https://github.com/cotes2020/jekyll-theme-chirpy
+# © 2017-2019 Cotes Chung
+# MIT License
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+<img style="float: right;" src="https://github.com/tofchaliss.png?size=200">
+
+I am a **Software Engineer** focusing on infrastructure, platforms, Linux, open source software, DevOps, distributed computing (Kubernetes), containerization, and the cloud.
+
+I have worked in many different languages and platforms but currently that is primarily Python, Go, and shell scripting.
+
+My non-computer passions are cooking and piano. Reach out to me (email address below) if you have any questions about these types of things, or just want to chat!
+
+### Contact me
+
+[tofchaliss@gmail.com](mailto:tofchaliss@gmail.com)
