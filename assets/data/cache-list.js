@@ -17,7 +17,6 @@ const include = [
   '{{ "/assets/css/page.css" | relative_url }}',
   '{{ "/assets/css/post.css" | relative_url }}',
   '{{ "/assets/css/category-tag.css" | relative_url }}',
-  '{{ "/assets/lib/bootstrap-toc-1.0.1/bootstrap-toc.min.css" | relative_url }}',
 
   /*--- Javascripts ---*/
 
@@ -25,7 +24,6 @@ const include = [
   '{{ "/assets/js/dist/timeago.min.js" | relative_url }}',
   '{{ "/assets/js/dist/category-collapse.min.js" | relative_url }}',
   '{{ "/assets/js/dist/toc.min.js" | relative_url }}',
-  '{{ "/assets/lib/bootstrap-toc-1.0.1/bootstrap-toc.min.js" | relative_url }}',
 
   /*--- HTML ---*/
 

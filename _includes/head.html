@@ -96,8 +96,6 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post.css">
 
     {% if site.toc and page.toc %}
-      <link rel="preload" as="style" href="{{ site.baseurl }}/assets/lib/bootstrap-toc-1.0.1/bootstrap-toc.min.css">
-      <link rel="stylesheet" href="{{ site.baseurl }}/assets/lib/bootstrap-toc-1.0.1/bootstrap-toc.min.css" />
     {% endif %}
 
   {% endif %}
@@ -138,8 +136,6 @@
   {% endif %}
 
   {% if site.toc and page.toc and page.layout == 'post' %}
-    <link rel="preload" as="script" href="{{ site.baseurl }}/assets/lib/bootstrap-toc-1.0.1/bootstrap-toc.min.js">
-    <script src="{{ site.baseurl }}/assets/lib/bootstrap-toc-1.0.1/bootstrap-toc.min.js" async></script>
     <script src="{{ site.baseurl }}/assets/js/dist/toc.min.js" async></script>
   {% endif %}
 
