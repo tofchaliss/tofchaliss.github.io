@@ -8,7 +8,7 @@ title: DevOps With GitHub Book
 # MIT License
 ---
 
-<img style="float: right; width: 300px" src="https://devops-with-github.com/images/book_cover.png">
+<img style="float: right; width: 300px" src="https://devops-with-github.com/images/book_cover.png" alt="">
 
 Dive into delivering production software from the world's leading DevOps platform!
 

@@ -5,13 +5,13 @@ categories: [Blog]
 tags: [python, flask, gunicorn]
 ---
 
-Logging is one topic that some (many?) find boring. But something we can all agree on is that it is absolutely vital to software development and operations. Beginners to [Flask](http://flask.pocoo.org/) (a lightweight but powerful Python web framework) may be disappointed to find that `print()` doesn't do exactly what they'd hope it would do, like in their CLI applications.
+Logging is one topic that some (many?) find boring. But something we can all agree on is that it is absolutely vital to software development and operations. Beginners to [Flask](https://flask.pocoo.org/) (a lightweight but powerful Python web framework) may be disappointed to find that `print()` doesn't do exactly what they'd hope it would do, like in their CLI applications.
 
 Flask requires that we rely heavily on the [native logging functionality of Python](https://docs.python.org/3/howto/logging.html). But when we stack a different WSGI (web server gateway interface) HTTP server on top of Flask, the confusion gets even more... confusing.
 
 ## Native Flask logging
 
-Forget about [Gunicorn](http://gunicorn.org/) (a great, production-quality WSGI HTTP server) for a minute. Let's take a very simple Flask application all by itself:
+Forget about [Gunicorn](https://gunicorn.org/) (a great, production-quality WSGI HTTP server) for a minute. Let's take a very simple Flask application all by itself:
 
 ```python
 import logging
@@ -37,7 +37,7 @@ Running this application with `python app.py` (provided you named the above modu
 
 ![Flask logging withing Gunicorn](/images/flask-gunicorn-1.png)
 
-What we're seeing above is [Werkzeug](http://werkzeug.pocoo.org/) (a WSGI utility library for Python, which Flask uses out-of-the-box) output.
+What we're seeing above is [Werkzeug](https://werkzeug.pocoo.org/) (a WSGI utility library for Python, which Flask uses out-of-the-box) output.
 
 ## Enter Gunicorn
 
