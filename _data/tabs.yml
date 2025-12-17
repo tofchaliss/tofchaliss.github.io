@@ -19,11 +19,6 @@
   url: archives
   icon: "fas fa-archive"
 -
-  name: "DevOps Book"
-  icon: "fas fa-book"
-  path: tabs
-  url: book
--
   name: "Vim"
   icon: "fas fa-star"
   path: tabs
