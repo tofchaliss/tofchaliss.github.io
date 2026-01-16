@@ -14,7 +14,7 @@ I am a **Software Engineer** focusing on infrastructure, platforms, Linux, open 
 
 I have worked in many different languages and platforms but currently that is primarily Python, Go, and shell scripting.
 
-My non-computer passions are cooking and piano. Reach out to me (email address below) if you have any questions about these types of things, or just want to chat!
+My non-computer passions are cooking and badmintion. Reach out to me (email address below) if you have any questions about these types of things, or just want to chat!
 
 ### Contact me
 
