@@ -55,6 +55,27 @@ layout: compress
 
     {% include search-loader.html %}
 
+    % if page.mermaid %}
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Convert fenced ```mermaid blocks rendered by Jekyll
+    document.querySelectorAll('code.language-mermaid').forEach(el => {
+      const container = document.createElement('div');
+      container.className = 'mermaid';
+      container.textContent = el.textContent;
+      el.parentNode.replaceWith(container);
+    });
+
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default'
+    });
+  });
+</script>
+{% endif %}
+
   </body>
 
 </html>

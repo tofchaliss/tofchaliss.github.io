@@ -3,6 +3,7 @@ layout: post
 title: Understanding Time complexity for Algorithms
 categories: [Blog]
 tags: [dsa]
+mermaid: true
 ---
 Understanding Time complexity is bit intimidating for me initially but as I started learning algorithms I found it easy to understand. So this is a blog to understand the time complexity of algorithms. There will be short cuts which anyone can be used for studying the algorithms.
 
