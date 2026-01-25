@@ -97,6 +97,8 @@ markdown: kramdown
 
 highlighter: rouge
 
+mermaid: true
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
