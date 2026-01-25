@@ -97,7 +97,7 @@ markdown: kramdown
 
 highlighter: rouge
 
-mermaid: true
+#mermaid: true
 
 kramdown:
   input: GFM
