@@ -2,20 +2,20 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const mermaidBlocks = document.querySelectorAll('pre.language-mermaid > code');
-
+    const mermaidBlocks = document.querySelectorAll('code.language-mermaid');
     if (!mermaidBlocks.length) return;
 
     mermaid.initialize({
       startOnLoad: false,
-      theme: 'default'
+      theme: document.documentElement.getAttribute('mode') === 'dark'
+        ? 'dark'
+        : 'default'
     });
 
-    mermaidBlocks.forEach((block, index) => {
+    mermaidBlocks.forEach(block => {
       const container = document.createElement('div');
       container.className = 'mermaid';
       container.textContent = block.textContent;
-
       block.parentElement.replaceWith(container);
     });
 
