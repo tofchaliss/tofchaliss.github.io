@@ -37,60 +37,51 @@ Special patterns:
 mindmap
   root((Time Complexity))
     Constraints
-      n ≤ 10⁴
-        O(n²)
-      n ≤ 10⁵
+      n <= 10^4
+        O(n^2)
+      n <= 10^5
         O(n log n)
-      n ≤ 10⁶
+      n <= 10^6
         O(n)
-      n ≥ 10⁷
+      n >= 10^7
         O(1)
         O(log n)
-    Common Patterns
+    Common_Patterns
       O(1)
-        Math formula
-        Hash lookup
-      O(log n)
-        Binary search
+        Math_formula
+        Hash_lookup
+      O(log_n)
+        Binary_search
       O(n)
-        Single loop
-        Two pointers
-      O(n log n)
+        Single_loop
+        Two_pointers
+      O(n_log_n)
         Sorting
-        Merge sort
-      O(n²)
-        Nested loops
-    Mental Signals
-      Loops inside loops
-        Likely O(n²)
-      Sorting present
-        At least O(n log n)
-      Binary decision
-        O(log n)
+        Merge_sort
+      O(n^2)
+        Nested_loops
 ```
 
-``` mermaid
+```mermaid
 mindmap
   root((Time Complexity))
     Calculation
-      amortized (mathematical)
-      runtime (enumeration)
+      amortized_mathematical
+      runtime_enumeration
     Progression
-      arithematic (O(n**2)) (1+2+3+n)
-        bubble sort
-        triangular loops
-        pairwise comparisons
+      arithmetic_O_n2
+        bubble_sort
+        triangular_loops
+        pairwise_comparisons
         DP
-      geometric (O(log n))
-        merge sort
-        binary search
-        heap operation
-        tree height
-      harmonic O(nlogn)
-        sieve of eratosthenes
-        hash table resize
-        union find
-        string matching
+      geometric_O_log_n
+        merge_sort
+        binary_search
+        heap_operation
+        tree_height
+      harmonic_O_nlogn
+        sieve_of_eratosthenes
+        hash_table_resize
+        union_find
+        string_matching
 ```
-
-
