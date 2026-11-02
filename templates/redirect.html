@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{#- Short-link page (e.g. /github): sends the visitor to page.extra.redirect_to. -#}
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex" />
+	<meta http-equiv="refresh" content="0; url={{ page.extra.redirect_to }}" />
+	<link rel="canonical" href="{{ page.extra.redirect_to }}" />
+	<title>Redirecting…</title>
+</head>
+<body>
+	<p>Redirecting to <a href="{{ page.extra.redirect_to }}">{{ page.extra.redirect_to }}</a>…</p>
+</body>
+</html>
