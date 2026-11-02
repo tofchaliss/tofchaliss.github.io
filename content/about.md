@@ -5,9 +5,10 @@ aliases = ["/tabs/about/"]
 
 {{ image(url="https://github.com/tofchaliss.png?size=200", alt="Franco Chalissery", no_hover=true, end=true) }}
 
-I am a **Software Engineer** focusing on infrastructure, platforms, Linux, open
-source software, DevOps, distributed computing (Kubernetes), containerization,
-and the cloud.
+I am a **Software Architect** at Radisys with 20 years of experience, focusing
+on infrastructure, platforms, Linux, open source software, DevOps, distributed
+computing (Kubernetes), containerization, and the cloud. My [CV](/cv/) has the
+full story.
 
 I have worked in many different languages and platforms but currently that is
 primarily Python, Go, and shell scripting.

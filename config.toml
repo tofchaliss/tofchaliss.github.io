@@ -1,6 +1,6 @@
 title = "Franco Chalissery"
 base_url = "https://tofchaliss.com"
-description = "Software engineer writing about Linux, Kubernetes, distributed systems, algorithms, and other technical things."
+description = "Software architect writing about Linux, Kubernetes, distributed systems, algorithms, and other technical things."
 author = "Franco Chalissery"
 default_language = "en"
 theme = "duckquill"
@@ -65,6 +65,7 @@ links = [
 	{ url = "@/now.md", name = "Now" },
 	{ url = "@/links.md", name = "Links" },
 	{ url = "@/about.md", name = "About" },
+	{ url = "/cv/", name = "CV" },
 ]
 
 [extra.footer]

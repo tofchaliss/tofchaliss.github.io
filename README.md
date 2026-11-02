@@ -48,11 +48,9 @@ removed a few months after the migration.
 ## CV
 
 `cv/cv.typ` is built into `/franco-chalissery-cv.pdf` by CI, but only once it
-contains no `TODO` markers. To publish it:
-
-1. Fill in every `TODO` in `cv/cv.typ` (preview locally with `make cv`).
-2. Delete `draft = true` from `content/go/cv.md` so `tofchaliss.com/cv` works.
-3. Optionally add `{ url = "/cv/", name = "CV" }` to `[extra.nav]` in `config.toml`.
+contains no `TODO` markers (a safety net for unfinished edits). Edit
+`cv/cv.typ` and preview it locally with `make cv`; `tofchaliss.com/cv`
+redirects to the PDF.
 
 ## Deployment
 
