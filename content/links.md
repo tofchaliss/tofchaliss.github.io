@@ -11,6 +11,6 @@ links = [
 	{ name = "X / Twitter", url = "https://twitter.com/fchaliss", note = "tofchaliss.com/x" },
 	{ name = "CV", url = "/cv/", note = "tofchaliss.com/cv" },
 	{ name = "Blog", url = "/blog/" },
-	{ name = "Email", url = "mailto:tofchaliss@gmail.com", note = "tofchaliss@gmail.com" },
+	{ name = "Email", url = "mailto:francochalissery@gmail.com", note = "francochalissery@gmail.com" },
 ]
 +++

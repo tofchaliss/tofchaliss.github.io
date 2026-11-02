@@ -59,13 +59,17 @@ csp = [
 show_feed = true
 show_theme_switcher = true
 show_repo = false
+# Keep the top level short: with more than ~4 entries the nav no longer fits
+# on one line and the feed icon wraps onto a second row.
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
 	{ url = "@/projects.md", name = "Projects" },
-	{ url = "@/now.md", name = "Now" },
-	{ url = "@/links.md", name = "Links" },
-	{ url = "@/about.md", name = "About" },
 	{ url = "/cv/", name = "CV" },
+	{ name = "More", menu = [
+		{ url = "@/now.md", name = "Now" },
+		{ url = "@/links.md", name = "Links" },
+		{ url = "@/about.md", name = "About" },
+	] },
 ]
 
 [extra.footer]
