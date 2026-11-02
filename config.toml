@@ -1,0 +1,73 @@
+title = "Franco Chalissery"
+base_url = "https://tofchaliss.com"
+description = "Software engineer writing about Linux, Kubernetes, distributed systems, algorithms, and other technical things."
+author = "Franco Chalissery"
+default_language = "en"
+theme = "duckquill"
+
+compile_sass = true
+minify_html = true
+build_search_index = true
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+	{ theme = "solarized-dark", filename = "syntax-theme-dark.css" },
+	{ theme = "solarized-light", filename = "syntax-theme-light.css" },
+]
+smart_punctuation = true
+bottom_footnotes = true
+
+[search]
+index_format = "fuse_json"
+
+[extra]
+# Dark by default; visitors can still switch with the nav theme switcher.
+default_theme = "dark"
+accent_color = "#8e44ad"
+accent_color_dark = "#dda0dd"
+show_copy_button = true
+show_reading_time = true
+show_share_button = true
+show_backlinks = false
+
+# Plausible analytics; injected in templates/partials/head.html.
+plausible_domain = "tofchaliss.com"
+
+# Content Security Policy. Duckquill starts from `default-src 'none'`,
+# so every resource type the site uses has to be listed here.
+csp = [
+	{ directive = "font-src", domains = ["'self'"] },
+	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
+	{ directive = "media-src", domains = ["'self'", "https:"] },
+	{ directive = "script-src", domains = ["https://plausible.io"] },
+	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
+	{ directive = "connect-src", domains = ["https://plausible.io"] },
+	{ directive = "base-uri", domains = ["'none'"] },
+	{ directive = "form-action", domains = ["'none'"] },
+]
+
+[extra.nav]
+show_feed = true
+show_theme_switcher = true
+show_repo = false
+links = [
+	{ url = "@/blog/_index.md", name = "Blog" },
+	{ url = "/tags/", name = "Tags" },
+	{ url = "@/about.md", name = "About" },
+]
+
+[extra.footer]
+links = [
+	{ url = "https://github.com/tofchaliss", name = "GitHub" },
+	{ url = "https://www.linkedin.com/in/francochalissery", name = "LinkedIn" },
+	{ url = "https://twitter.com/fchaliss", name = "X" },
+]
+show_copyright = true
+show_powered_by = true
+show_source = false

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{#- Home page: the intro from content/_index.md, then the latest posts. -#}
+{% block content %}
+{{ section.content | safe }}
+
+{%- set blog = get_section(path="blog/_index.md") -%}
+{%- if blog.pages | length > 0 %}
+<h2>Recent posts</h2>
+<div id="article-list">
+	{%- for page in blog.pages | slice(end=5) %}
+		<article>
+			<a href="{{ page.permalink | safe }}"></a>
+			<h3>{{ page.title }}</h3>
+			{%- if page.description %}
+				{{ page.description | markdown | safe }}
+			{%- endif %}
+			{%- if page.date %}
+				<div class="details">
+					<small>
+						<time datetime="{{ page.date | date(format='%+') }}">
+							{{- page.date | date(format="%B %d, %Y") -}}
+						</time>
+					</small>
+				</div>
+			{%- endif %}
+		</article>
+	{%- endfor %}
+</div>
+<p><a href="{{ get_url(path='@/blog/_index.md') }}">All posts →</a></p>
+{%- endif %}
+{% endblock content %}
