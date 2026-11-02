@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: true
 
@@ -30,12 +30,27 @@ jobs:
         with:
           tool: zola@0.20.0
 
+      - name: Install Typst
+        uses: taiki-e/install-action@v2
+        with:
+          tool: typst-cli@0.15.0
+
       - name: Build site
         run: zola build
 
+      # The CV is only published once cv/cv.typ has no TODO placeholders left.
+      - name: Build CV
+        run: |
+          if grep -q 'TODO' cv/cv.typ; then
+            echo "cv/cv.typ still has TODOs; skipping the CV PDF."
+            typst compile cv/cv.typ /tmp/cv-check.pdf   # still fail the build on Typst errors
+          else
+            typst compile cv/cv.typ public/franco-chalissery-cv.pdf
+          fi
+
       - name: Upload site artifact
         if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
@@ -49,4 +64,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

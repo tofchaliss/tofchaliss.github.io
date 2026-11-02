@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{#- Link-in-bio page: avatar, tagline, one big button per entry in page.extra.links. -#}
+{% block content %}
+<div class="links-header">
+	<img src="{{ page.extra.avatar }}" alt="{{ config.author }}" />
+	<h1>{{ config.author }}</h1>
+	{%- if page.description %}<p>{{ page.description }}</p>{% endif %}
+</div>
+
+<ul class="links-list">
+	{%- for link in page.extra.links %}
+		<li>
+			<a href="{{ link.url }}" {% if link.url is matching('^https?://') %}rel="me noopener"{% endif %}>
+				{{- link.name -}}
+				{%- if link.note %}<small>{{ link.note }}</small>{% endif -%}
+			</a>
+		</li>
+	{%- endfor %}
+</ul>
+
+{{ page.content | safe }}
+{% endblock content %}

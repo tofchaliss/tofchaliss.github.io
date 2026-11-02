@@ -36,6 +36,9 @@ show_reading_time = true
 show_share_button = true
 show_backlinks = false
 
+# Site styles from sass/custom.scss (project cards, links page).
+styles = ["custom.css"]
+
 # Plausible analytics; injected in templates/partials/head.html.
 plausible_domain = "tofchaliss.com"
 
@@ -58,7 +61,9 @@ show_theme_switcher = true
 show_repo = false
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
-	{ url = "/tags/", name = "Tags" },
+	{ url = "@/projects.md", name = "Projects" },
+	{ url = "@/now.md", name = "Now" },
+	{ url = "@/links.md", name = "Links" },
 	{ url = "@/about.md", name = "About" },
 ]
 

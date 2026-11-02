@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{#- Projects page: the page's own text, then a card per entry in page.extra.projects. -#}
+{% block content %}
+<h1>{{ page.title }}</h1>
+{{ page.content | safe }}
+
+<div class="project-grid">
+	{%- for project in page.extra.projects %}
+		<a class="project-card" href="{{ project.url }}" rel="noopener">
+			<h3>{{ project.name }}</h3>
+			<p>{{ project.description }}</p>
+			{%- if project.tags %}
+				<ul class="project-tags">
+					{%- for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}
+				</ul>
+			{%- endif %}
+		</a>
+	{%- endfor %}
+</div>
+{% endblock content %}
