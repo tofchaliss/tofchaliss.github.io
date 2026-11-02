@@ -46,7 +46,7 @@
   #text(size: 11.5pt, fill: muted)[Software Architect · Distributed Systems, Cloud Architecture, Backend Scalability]
   #v(-0.45em)
   Bangalore, India ·
-  #link("mailto:tofchaliss@gmail.com")[tofchaliss\@gmail.com] ·
+  #link("mailto:francochalissery@gmail.com")[francochalissery\@gmail.com] ·
   #link("https://tofchaliss.com")[tofchaliss.com] ·
   #link("https://github.com/tofchaliss")[github.com/tofchaliss] ·
   #link("https://www.linkedin.com/in/francochalissery/")[linkedin.com/in/francochalissery]
@@ -55,9 +55,8 @@
 // --------------------------------------------------------------- summary
 
 #section("Summary")
-Engineering leader with 20 years of experience designing and scaling distributed
-systems, cloud-native microservices, and event-driven architectures. Proven track
-record of leading cross-functional teams, mentoring engineers, and driving
+Engineering leader experienced in designing and scaling distributed systems,
+cloud-native microservices, and event-driven architectures. Proven track record of leading cross-functional teams, mentoring engineers, and driving
 technical vision across large-scale, high-availability platforms. Strong
 collaborator with product and business stakeholders, aligning technical roadmaps
 with business outcomes.
