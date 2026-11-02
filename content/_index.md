@@ -4,10 +4,9 @@ title = "Home"
 
 # Hi, I'm Franco.
 
-I'm a **software architect** with 20 years of experience designing and scaling
-distributed systems, cloud-native microservices, and event-driven
-architectures. These days I mostly write Python and Go. Here's my
-[CV](/cv/).
+I'm a **software architect** who designs and scales distributed systems,
+cloud-native microservices, and event-driven architectures. These days I
+mostly write Python and Go. Here's my [CV](/cv/).
 
 Outside work I'm building [Themis](@/projects.md), an open-source platform for
 tracking vulnerabilities in the software you ship. See what I'm up to
